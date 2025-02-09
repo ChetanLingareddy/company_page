@@ -14,6 +14,8 @@ st.header("Our Team")
 
 col1, col2, col3 = st.columns([1,1,1])
 df = pandas.read_csv("data.csv" ,sep=",")
+
+
 with col1:
     for index , row in df[:4].iterrows():
         name = row['first name'].title() + " " +  row['last name'].title()
